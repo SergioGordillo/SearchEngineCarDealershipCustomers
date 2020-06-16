@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de clientes del concesionario</title>
+    <script src="main.js"></script>
+</head>
+<!-- Crear sobre la BBDD concesionario.sql un formulario html que permita introducir el nombre de un cliente y buscarlo en la BBDD mediante eventos JavaScript y llamadas Asíncronas.
+
+El formulario nos pedirá introducir el Apellido1 de un cliente, y cada vez que introduzcamos una letra, mostrará debajo del formulario, una tabla html con los datos de los clientes que contengan la letra introducida en su apellido. Si introducimos otra letra más realizará una nueva consulta y mostrará otra tabla con los resultados que cumplan la condición de búsqueda y así sucesivamente. -->
+<body>
+
+<form method="POST" name="formulario" id="formulario">
+
+        <label for="Apellido1">Escribe tu primer apellido</label>
+        <input type="text" name="Apellido1" id="Apellido1" onkeyup="buscarClientes()">
+
+        <div id="contenedorApellido1"></div>
+        
+        <br> <br>
+
+</form>
+
+
+
+    
+</body>
+</html>
